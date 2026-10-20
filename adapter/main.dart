@@ -1,0 +1,10 @@
+import 'tienda.dart';
+import 'servicio-pago.dart';
+import 'terminal-externa.dart';
+
+void main() {
+  final Tienda tienda = Tienda(ServicioPago(), TerminalExterna());
+
+  tienda.finalizarCompra(150.0, 'servicio');
+  tienda.finalizarCompra(150.0, 'terminal');
+}
